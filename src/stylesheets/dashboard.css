@@ -1,0 +1,13 @@
+.Dashboard-header {
+  text-align: center;
+  background-color: #4fa444;
+  height: 80px;
+  padding: 20px;
+  color: white;
+}
+
+.Dashboard-content {
+  font-family: 'Roboto', sans-serif;
+  margin: 30px;
+  color: #5e6367;
+}

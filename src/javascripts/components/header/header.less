@@ -1,0 +1,134 @@
+@import '../../../style/helper.less';
+@import '../../../style/animate.css';
+
+.intro {
+  color: red;
+  .introScreen {
+    width: 100%;
+    background: url('../../../img/fnd.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    .logos {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      @media @mobile {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+      }
+      @media @tablet {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+      }
+    }
+    .logo {
+      max-width: 400px;
+      max-height: 211px;
+      margin: 15px;
+      padding: 15px;
+      @media @mobile {
+        margin-bottom: 0px;
+        max-width: 200px;
+        max-height: 105px;
+      }
+      @media @tablet {
+        max-width: 300px;
+        max-height: 159px;
+      }
+    }
+    .logo-barao {
+      margin: 15px;
+      padding: 15px;
+       @media @mobile {
+        margin-top: 0px;
+        max-width: 200px;
+        max-height: 105px;
+      }
+      @media @tablet {
+        max-width: 300px;
+        max-height: 159px;
+      }
+    }
+    h1 {
+      color: #fff;
+      font-family: 'Dosis-Bold', arial;
+      width: 90%;
+      margin: 120px auto 0 auto;
+      bottom: 150px;
+      text-align: center;
+      @media @mobile {
+        margin-top: 55px;
+      }
+    }
+    h2 {
+      color: #fff;
+      font-family: 'Dosis-Bold', arial;
+      margin: 0px auto 0 auto;
+      bottom: 150px;
+      font-size: 32px;
+      text-align: center;
+      width: 90%;
+    }
+    .scroll {
+      cursor: pointer;
+      width: 50px;
+      height: 50px;
+      border: 1px solid white;
+      border-radius: 100%;
+      margin: 100px auto;
+      background: url('../../../img/seta.png');
+      background-repeat: no-repeat;
+      background-position: center 60%;
+      background-size: 50%;
+      @media @mobile {
+        margin-top: 50px;
+      }
+    }
+  }
+  .headerbar {
+    width: 100%;
+    background: @mainColor;
+    .container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      width: 1024px;
+      margin: 0 auto;
+      .logo {
+        cursor: pointer;
+        width: 70%;
+        height: 60px;
+        background: url('../../../img/logo_topo.png') no-repeat;
+        background-size: contain;
+        margin-top: 8px;
+        @media @mobile {
+          display: none;
+        }
+      }
+      .menu-item {
+        text-decoration: none;
+        color: #fff;
+        font-family: 'Dosis', arial;
+        font-size: 18px;
+        cursor: pointer;
+        margin: 30px 50px 30px 0px;
+      }
+      @media @mobile {
+        width: 90%;
+      }
+    }
+  }
+}
